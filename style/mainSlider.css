@@ -1,0 +1,250 @@
+.mainSlider {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #fff;
+}
+
+.main_slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.main_slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 980px) {
+    .main_slider__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.main_slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+}
+
+.main_slider__control:hover,
+.main_slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.main_slider__control_left {
+    left: 0;
+}
+
+.main_slider__control_right {
+    right: 0;
+}
+
+.main_slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.main_slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.main_slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.main_slider__item > div {
+    text-align: center;
+    height: 600px;
+}
+
+.sliderImages {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imageFirst {
+    width: 55%;
+    height: 600px;
+    background: url("../image/mainSlider/2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.imageSecond {
+    width: 45%;
+    background-color: #2d235c;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-image: url("../image/mainSlider/2.svg");
+    line-height: 1;
+    text-align: left;
+    padding: 100px 5%;
+}
+
+.slideImage {
+    margin-bottom: 50px;
+}
+
+.slideTopic {
+    margin-bottom: 40px;
+}
+
+.slideTopic h2 {
+    margin-top: 10px;
+    font-size: 34px;
+}
+
+.slideText {
+    margin-bottom: 50px;
+}
+
+.slideText span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.slideButton button {
+    background: #e73070;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.slideButton button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    display: block;
+    line-height: 2.0;
+    padding: 10px 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .imageFirst {
+        display: none;
+    }
+
+    .imageSecond {
+        width: 100%;
+        padding: 10% 5%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .imageFirst {
+        width: 60%;
+    }
+
+    .imageSecond {
+        width: 40%;
+        padding: 60px 4%;
+    }
+}
+
+.slideSecond {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-image: url("../image/mainSlider/1.jpg");
+}
+
+.slideContent {
+    text-align: left;
+    padding: 100px 20%;
+    width: 40%;
+}
+
+.slideContent > .slideTopic > h2 {
+    line-height: 1;
+    font-size: 42px;
+}
+
+.slideContent > .slideText {
+    line-height: 1;
+    font-size: 14px;
+}
+
+.slideForm input {
+    padding: 15px;
+}
+
+.mainSlider input[type=text] {
+    padding: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: grey;
+    font-size: 18px;
+    width: 200px;
+    margin-right: 15px;
+}
+
+.mainSlider input[type=submit] {
+    padding: 15px 30px;
+    background: #7d1c57;
+    color: white;
+    outline: none;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.slideContent > .slideButton > button {
+    background: #7d1c57;
+    margin-top: 20px;
+}
+
+.slideSecond > .slideContent > .slideButton > button > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    line-height: 1.5;
+    padding: 10px 40px;
+}
+
+@media screen and (max-width: 950px) {
+    .slideContent {
+        text-align: center;
+        padding: 50px 20%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainSlider input[type=submit] {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .mainSlider input[type=text] {
+        width: 350px;
+    }
+}
+

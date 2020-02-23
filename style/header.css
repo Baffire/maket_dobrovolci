@@ -1,0 +1,143 @@
+/*HEADER TOPIC
+=============================================*/
+header {
+    background: white;
+    border-bottom: 1px solid lightgrey;
+}
+
+.headerPanel {
+    border-bottom: 1px solid lightgrey;
+    font-size: 8pt;
+    letter-spacing: 2px;
+}
+
+.headerFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerSelectRegion {
+    margin: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.headerSelectRegion select {
+    border: none;
+    font-family: Gerbera,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    width: 135px;
+}
+
+.headerSelectRegion select option {
+    font-family: Gerbera,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.headerSelectRegion:hover {
+    border-radius: 15px;
+    border: 2px solid pink;
+    cursor: pointer;
+}
+
+.headerSelectRegion select:hover {
+    cursor: pointer;
+}
+
+.headerTopic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 5px -70px;
+}
+
+.headerSubTopic p {
+    color: lightgrey;
+    font-size: 10pt;
+}
+
+.headerLogin {
+    margin: 0 20px 0 0;
+}
+
+.headerLogin button {
+    padding: 4px 8px;
+    border-radius: 40px;
+    background: none;
+    border: 1px solid lightgrey;
+}
+
+.headerLogin a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: Gerbera,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.headerLogin img {
+    margin-right: 5px;
+}
+
+/*HEADER MENU
+=============================================*/
+.headerMenu {
+    font-size: 10pt;
+    padding: 5px;
+}
+
+.headerMenu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+.headerMenu ul li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.headerMenu ul li a {
+    text-decoration: none;
+    color: grey;
+    display: block;
+    line-height: 1.5;
+}
+
+.headerMenu ul li a.purple {
+    background: rgba(138,36,143,.15);
+    padding: 3px 5px;
+    color: #8a248f;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.headerMenu ul li a.blue {
+    background: rgba(67,132,122,.15);
+    padding: 3px 5px;
+    color: #509d92;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.headerMenu ul li a.pink {
+    background: rgba(229,49,121,.15);
+    padding: 3px 5px;
+    color: #e84888;
+    border-radius: 15px;
+    font-weight: bold;
+}

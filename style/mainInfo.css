@@ -1,0 +1,237 @@
+.mainInfo {
+    background-image: url("../image/main/info/background.jpg");
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/*WHAT YOU MUST DO
+===================================*/
+.infoWhatYouMustDo {
+    margin: 20px auto;
+    width: 1100px;
+}
+
+.infoTopic h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.infoColumn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoColumnTopic {
+    color: lightgrey;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.infoVolunteers,
+.infoOrganizations {
+    margin: 0 30px;
+}
+
+.infoVolunteers div,
+.infoOrganizations div {
+    display: flex;
+    align-items: center;
+}
+
+.infoVolunteers div p,
+.infoOrganizations div p {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.infoLine {
+    width: 30px;
+    height: 30px;
+    border-right: 2px solid lightgray;
+}
+
+@media screen and (max-width: 950px){
+    .infoWhatYouMustDo {
+        width: 85%;
+    }
+}
+
+.infoTwoBut {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.infoTwoBut div button {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.infoTwoBut div button a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.infoButOne button {
+    background: #8a248f;
+    border: none;
+}
+
+.infoButTwo button {
+    background: white;
+    border: 1px solid #8a248f;
+}
+
+.infoButOne button a {
+    display: block;
+    line-height: 3.5;
+    color: white;
+}
+
+.infoButTwo button a {
+    display: block;
+    line-height: 3.5;
+    color: #8a248f;
+}
+
+.infoButOne button:hover {
+    background: rgba(138, 36, 143, 0.8);
+}
+
+.infoButTwo button:hover {
+    background: rgba(250,250,250,0.8);
+}
+
+.infoAndYouCan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px){
+    .infoTwoBut {
+        flex-direction: column;
+    }
+
+    .infoTwoBut div button {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+.infoAndYouCan {
+    margin: 0 auto;
+}
+
+.infoAndYouCan p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.infoAndYouCan button {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.infoAndYouCan button a {
+    text-decoration: none;
+    color: rgba(138, 36, 143, 1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.infoAndYouCan button a:hover {
+    text-decoration: underline;
+}
+
+/*SLIDER
+==============================*/
+
+/*OPPORTUNITIES
+======================================*/
+.infoOpportunities {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.infoOpportunities > h2 {
+    font-size: 34px;
+}
+
+.infoOpportunities .infoButtons {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infoOpportunities .infoButtons button {
+    background: #EEEEEE;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    border: none;
+    margin: 10px;
+}
+
+.infoOpportunities .infoButtons button a {
+    text-decoration: none;
+    color: #212529;
+    font-weight: bold;
+    font-family: Gerbera,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.infoOpportunities .infoButtons .but {
+    background: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.infoOpportunities .infoButtons .but img {
+    padding-right: 5px;
+}
+
+.infoOpportunities .voz button {
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid lightgrey;
+}
+
+.infoOpportunities .voz a {
+    display: block;
+    color: purple;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.infoOpportunities .voz button:hover {
+    background: rgba(250, 250, 250, 0.9);
+}

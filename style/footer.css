@@ -1,0 +1,267 @@
+footer {
+    padding: 20px;
+    background: #111;
+}
+
+.footerTopic {
+    margin-bottom: 20px;
+}
+
+.footerTopic h2 {
+    color: white;
+    margin-top: 50px;
+}
+
+/*MENU
+======================================*/
+.footerMenu {
+    width: 80%;
+    margin: 0 auto 20px  auto;
+}
+
+.footerMenu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerMenu ul li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.footerMenu ul li:hover {
+    text-decoration: underline;
+}
+
+.footerMenu ul li:not(:last-child) {
+    padding-right: 40px;
+}
+
+.footerMenu ul li a {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px ){
+    .footerMenu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerMenu ul li:not(:last-child) {
+        padding-right: 0;
+    }
+}
+
+/*SOCIAL
+======================================*/
+.footerRules {
+    margin-bottom: 20px;
+}
+
+.footerRules p {
+    padding: 15px;
+}
+
+
+.footerRules p:nth-child(1) {
+    padding-top: 30px;
+}
+
+.footerRules p:nth-child(2) {
+    padding: 20px;
+}
+
+.footerRules p a {
+    font-weight: bold;
+    font-size: 14px;
+    color: grey;
+    text-decoration: none;
+}
+
+.footerRules p:nth-child(2),
+.footerRules p:nth-child(3) {
+    font-size: 24px;
+}
+
+.footerRules p a:hover {
+    text-decoration: underline;
+}
+
+.footerIconSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.footerIconSocial div {
+    margin-right: 10px;
+}
+
+.footerIconSocial .iconFirst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerIconSocial .iconSecond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.line {
+    height: 60px;
+    border-right: 1px solid grey;
+}
+
+@media screen and (max-width: 800px ){
+    .footerIconSocial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 30px 0;
+    }
+
+    .footerIconSocial .iconSecond {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+/*SUBSCRIBE
+======================================*/
+.footerSocial {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.firstSocial {
+    width: 60%;
+    color: white;
+    font-weight: bold;
+}
+
+.firstSocial p {
+    padding: 10px 0;
+}
+
+.footerSubscribe {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerForm {
+    display: flex;
+    align-items: center;
+}
+
+.footerForm form input {
+    height: 50px;
+    padding-left: 10px;
+}
+
+.footerNav {
+    text-align: center;
+    height: 55px;
+    width: 40px;
+    background: rgba(236,236,236,.05);
+}
+
+.footerNav a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footerAppStore {
+    width: 40%;
+    color: white;
+    font-weight: bold;
+}
+
+.footerAppStore p {
+    padding: 10px 0;
+}
+
+.footerStore {
+    display: flex;
+}
+
+@media screen and (max-width: 800px ){
+    .footerSocial {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .firstSocial {
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .footerAppStore {
+        width: 100%;
+        color: white;
+        font-weight: bold;
+    }
+
+}
+
+/*SUPPORT
+======================================*/
+.footerSupport {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.line1 {
+    height: 60px;
+    border-right: 1px solid grey;
+}
+
+@media screen and (max-width: 1000px ){
+    .line1 {
+        display: none;
+    }
+}
+
+.footerSupport div p {
+    color: grey;
+    font-weight: bold;
+}
